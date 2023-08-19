@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - Entry
-*
-* Return: Always 0
-*/
+  * main - Entry
+  *
+  * Return: Always 0
+  */
 int main(void)
 {
 	int x;
 	int j;
-	
+
 	for (x = 0; x <= 9; x++)
 	{
 		for (j = x + 1; j <= 9; j++)
