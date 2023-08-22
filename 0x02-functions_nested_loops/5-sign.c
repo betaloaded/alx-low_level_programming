@@ -1,6 +1,12 @@
 #include "main.h"
 /**
-  * main - entry
+  * print_sign - prints a sign
+  *
+  * @n: variable
+  *
+  * Description: Returns 1 and prints + if n is greater than zero
+  *Returns 0 and prints 0 if n is zero
+  *Returns -1 and prints - if n is less than zero
   *
   * Return: return 1 0r 0
   */

@@ -2,7 +2,12 @@
 #include <stdio.h>
 
 /**
-  * main - check the code
+  * add - adds two integers
+  *
+  * @a: first integer
+  * @b: second integer
+  *
+  * Description:  function that adds two integers and returns the result
   *
   * Return: Always 0.
   */

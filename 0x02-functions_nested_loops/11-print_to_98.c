@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-  * main - check the code
+  * print_to_98 - prints all natural numbers
+  *
+  * @n: first natural number
+  *
+  * Description: function that prints all natural numbers from n to 98
   *
   * Return: Always 0.
   */
@@ -46,9 +50,4 @@ void print_to_98(int n)
 		}
 		printf("\n");
 	}
-	else if (n == 98)
-	{
-			printf("%d\n", n);
-	}
-
 }
