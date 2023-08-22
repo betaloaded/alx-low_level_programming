@@ -4,9 +4,7 @@
   *
   * @n: variable
   *
-  * Description: Returns 1 and prints + if n is greater than zero
-  *Returns 0 and prints 0 if n is zero
-  *Returns -1 and prints - if n is less than zero
+  * Description: Returns 1 and prints + if n is greater than 0
   *
   * Return: return 1 0r 0
   */
