@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
   * times_table - prints the 9 times table
   *
@@ -12,22 +13,22 @@ void times_table(void)
 
 	for (row = 0; row <= 9; row++)
 	{
-		_putchar('0');
 		for (column = 0; column <= 9; column++)
 		{
-			_putchar(',');
-			_putchar(' ');
 			product = row * column;
-			if (product <= 9)
+			if (column == 0)
 			{
-				_putchar(' ');
+				printf("%d, ", product);
 			}
 			else
 			{
-				_putchar((product / 10) + '0');
+				printf("%2d", product);
+				if (column != 9)
+				{
+					printf(", ");
+				}
 			}
-			_putchar((product % 10) + '0');
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
