@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+  * main - Entry point
+  *
+  * Return: Always 0
+  */
 int main(void)
 {
 	int sum = 0;
@@ -12,5 +17,5 @@ int main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
-
