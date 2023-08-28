@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
   * _isupper - fuction to check uppercase
