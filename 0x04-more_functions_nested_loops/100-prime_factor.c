@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-/** 
+/**
   * main - entry point
   *
   * Description: function to print the larget prime factor
