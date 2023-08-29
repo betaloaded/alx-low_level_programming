@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <math.h>
-
+/** 
+  * main - entry point
+  *
+  * Description: function to print the larget prime factor
+  *
+  * Return: 0
+  */
 int main(void)
 {
 	long x, maxf;
