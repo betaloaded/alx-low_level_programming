@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
   * print_diagonal - function to print diagonal line
   *
@@ -8,6 +9,7 @@
   *
   * Return: 0
   */
+
 void print_diagonal(int n)
 {
 	if (n <= 0)
