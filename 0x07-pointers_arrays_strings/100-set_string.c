@@ -1,23 +1,10 @@
-#include "main.h"
+ #include "main.h"
 /**
-  * _strstr - Entry point
-  * @haystack: input
-  * @needle: input
-  * Return: always 0
+  * set_string - sets the value of a pointer to a char
+  * @s: pointer to pointer
+  * @to: pointer char
   */
-char *_strstr(char *haystack, char *needle)
+void set_string(char **s, char *to)
 {
-	for (; *haystack != '\0'; haystack++)
-	{
-		char *l = haystack;
-		char *p = needle;
-		while (*l == *p && *p != '\0')
-		{
-			l++;
-			p++;
-		}
-		if (*p == '\0')
-			return (haystack);
-	}
-	return (0);
+	*s = to;
 }
