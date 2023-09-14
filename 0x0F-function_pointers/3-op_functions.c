@@ -5,7 +5,7 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 /**
-  * op_ad - function to sum
+  * op_add - function to sum
   * @a: parameter
   * @b: parameter
   * Return: a + b
