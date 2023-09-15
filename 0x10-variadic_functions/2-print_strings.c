@@ -5,6 +5,7 @@
   * print_strings - prints strings
   * @separator: parameter
   * @n: parameter
+  * @...: A variable number of strings to be printed
   * Description: If separator is NULL, it is not printed.
   */
 void print_strings(const char *separator, const unsigned int n, ...)
