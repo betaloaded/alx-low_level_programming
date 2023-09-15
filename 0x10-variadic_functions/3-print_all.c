@@ -9,10 +9,11 @@ void print_all(const char * const format, ...)
 {
 	char *str, *sep = "";
 	int count = 0;
+
 	va_list list;
 
 	va_start(list, format);
-	if (format[count])
+	if (format)
 	{
 		while (format[count])
 		{
