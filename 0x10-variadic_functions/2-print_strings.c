@@ -5,6 +5,7 @@
   * print_strings - prints strings
   * @separator: parameter
   * @n: parameter
+  * Description: If separator is NULL, it is not printed.
   */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -19,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (str  == NULL)
 			printf("(nil)");
 		printf("%s", str);
-		if (i != (n-1) && separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
