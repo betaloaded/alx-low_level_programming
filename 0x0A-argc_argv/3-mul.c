@@ -2,26 +2,41 @@
 #include "main.h"
 /**
  * atoi - program to change string to char
- * @str: string
+ * @s: string
  * Return: 0
  */
-int atoi(char *str)
+int atoi(char *s)
 {
-	int res = 0;
-	int sign = 1;
-	int i = 0;
+	int i, d, n, len, f, digit;
 
-	if (str[0] == '-')
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
+	while (s[len] != '\0')
+		len++;
+	while (i < len && f == 0)
 	{
-		sign = -1;
+		if (s[i] == '-')
+			++d;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
 		i++;
 	}
-	for (; str[i] != '\0'; i++)
-	{
-		res = res * 10 + str[i] - '0';
-		return (res * sign);
-	}
-	return (0);
+	if (f == 0)
+		return (0);
+	return (n);
 }
 /**
   * main - program to multiply two numbers
@@ -33,16 +48,16 @@ int main(int argc, char *argv[])
 {
 	int z, j;
 
-	if (argc == 3)
-	{
-		z = atoi(argv[1]);
-		j = atoi(argv[2]);
-		printf("%d\n", z * j);
-	}
-	else
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
+	}
+	else
+	{
+		 z = atoi(argv[1]);
+		 j = atoi(argv[2]);
+		 printf("%d\n", z * j);
 	}
 	return (0);
 }
